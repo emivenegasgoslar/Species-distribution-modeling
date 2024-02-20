@@ -67,3 +67,19 @@ fData<- fData %>%
 
 fData<-fData %>%
   cc_sea(lon="decimalLongitude", lat="decimalLatitude")
+
+
+
+
+# remove duplicates 
+fData<-fData %>%
+  distinct(decimalLongitude, decimalLatitude, speciesKey, datasetKey, .keep_all = TRUE)
+
+
+#one fell sweep:
+
+
+
+
+
+
