@@ -76,8 +76,8 @@ fData<-fData %>%
   distinct(decimalLongitude, decimalLatitude, speciesKey, datasetKey, .keep_all = TRUE)
 
 
-#one fell sweep:
 
+write.csv(fData, "data/cleanedData.csv")
 
 
 
